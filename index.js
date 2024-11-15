@@ -5,7 +5,7 @@ const path=require("path");
 const Chat = require("./models/chat.js");
 app.set("views",path.join(__dirname,"views"));
 app.set("view enginer","ejs");
-
+app.use(express.static(path.join(__dirname, "public")));
 //for database connection
 main().then(()=> {
     console.log("connection successful");
