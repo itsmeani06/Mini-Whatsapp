@@ -1,3 +1,6 @@
+//To add data into the database only once
+
+
 const mongoose=require("mongoose");
 const Chat = require("./models/chat.js");
 main().then(()=> {
